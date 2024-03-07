@@ -1,0 +1,622 @@
+/* Fuente utilizada en el proyecto */
+@font-face {
+  font-family: "SF-PRO";
+  src: url("../src/fonts/SFPRODISPLAYREGULAR.OTF");
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../src/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+/* Default - Definiendo valores por defecto  */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #ffff;
+  font-family: "SF-PRO";
+}
+
+body {
+  background-color: #020304;
+  overflow-x: hidden;
+}
+
+span {
+  color: #e5383b;
+}
+
+a {
+  text-decoration: none;
+  color: #e5383b;
+}
+
+h1,
+h2,
+h3,
+h2 > span,
+h3 > span {
+  font-family: "Playfair";
+}
+
+h3 {
+  font-size: 4.5vmin;
+}
+
+p {
+  font-size: 2.5vmin;
+}
+
+/* Default - Secciones */
+
+#biography,
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  font-size: 8vmin;
+}
+
+/* Header */
+.hd {
+  height: 100vh;
+  display: flex;
+}
+
+.hd-photo {
+  width: 35vw;
+  height: 100%;
+  background-image: url("../src/imgs/photoMyself.jpg");
+  background-size: cover;
+}
+
+/* Header - Gradiente */
+
+.gradient {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.gradient img {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  opacity: 20%;
+}
+
+/* Header - Complemento de titulo */
+
+.ab-title-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ab-title p {
+  font-size: 4vmin;
+  font-weight: 600;
+}
+
+/*
+  Header - Titulo 
+*/
+
+.name-container {
+  width: 14vmin;
+  height: 14vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-container h1 {
+  position: absolute;
+  font-size: 14vmin;
+}
+
+.border {
+  color: #020304;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 1px 0 white,
+    -1px 1px 0 white;
+}
+
+.wave {
+  color: #ffff;
+  animation: wave 3s ease-in-out infinite;
+}
+
+/* Section 1 - ABOUT ME */
+
+#about-me {
+  flex-direction: row;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+/* Section 1.1 - Contenedor de titulo */
+
+.about-me-title-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.about-me-title-container h2 {
+  position: relative;
+  margin-bottom: 5vh;
+  z-index: 5;
+}
+
+.mini-block {
+  background-color: #e5383b;
+  width: 55%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -5;
+}
+
+/* Section 1.2 - Contenedor de imagen */
+
+.about-me-img-container {
+  width: 35vmin;
+  height: 35vmin;
+}
+
+.about-me-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 100%;
+  outline: 5px solid #e5383b;
+}
+
+/* Section 1.3 - Contenido texto */
+
+.about-me-content {
+  padding: 0 5vw;
+  width: 70%;
+}
+
+.about-me-content h3 {
+  text-align: center;
+  margin-bottom: 5vh;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.about-me-content p {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+/* Section 2 - Biography */
+
+#biography {
+  background-color: #020304;
+}
+
+#biography > * {
+  margin-top: 50px;
+}
+
+.biography-content > section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 15vh 0;
+}
+
+.biography-content > section:first-child {
+  padding-top: 5vh;
+}
+
+.biography-content > section:nth-child(2) {
+  background-color: #1e1e1e;
+}
+
+.biography-content > section > div {
+  padding: 0 5vw;
+}
+
+/* Section 2.1 - Contenedor del titulo */
+
+.biography-title-container h2 {
+  position: relative;
+  z-index: 5;
+}
+
+/* Section 2.2 - Contenedor de imagen */
+
+.biography-content > section > div > img {
+  width: 55vmin;
+  height: 55vmin;
+}
+
+/* Section 2.3 - Contenido texto */
+
+.biography-content-block p {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.biography-image-container-block {
+  display: flex;
+  margin-top: 5vh;
+  justify-content: space-between;
+}
+
+.biography-image-container-block img {
+  border-radius: 1vmin;
+  width: 48%;
+  height: 35vh;
+  object-fit: cover;
+}
+
+.biography-content > section > div > h3 {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  background-color: #1e1e1e;
+}
+
+footer p {
+  font-size: 1.9vmin;
+  color: #b4b4b4;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #02030479;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window{
+  display: flex;
+  width: 70vw;
+  height: 30vh;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.modal-image{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.modal-text{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-text p{
+  margin: 0 2vmin;
+}
+
+.activate{
+  animation: modal-view .5s;
+}
+
+.hidden{
+  animation: modal-out .5s;
+}
+
+
+/* Css Responsive */
+
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+ 
+  .biography-content > section > div > img{
+    width: 35vw;
+    height: 35vh;
+  }
+
+ .biography-image-container-block img{
+  width: 45%;
+ }
+
+ .modal-window{
+  height: 25vh;
+} 
+
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  p {
+    font-size: 3.5vmin 
+  }
+
+  #about-me {
+    height: 200vh;
+    flex-direction: column;
+  }
+
+  .biography-content > section:nth-child(1),
+  section:nth-child(3) {
+    flex-direction: column;
+  }
+
+  .biography-content > section:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .biography-image-container-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .biography-image-container-block img {
+    width: 80%;
+    height: 35vh;
+    margin: 10px 0;
+  }
+
+  .modal-window{
+    flex-direction: column;
+    height: 60vh;
+  }
+
+  .modal-image{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modal-text{
+    height: 100%;
+  }
+  
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+  p {
+    font-size: 3.5vmin !important;
+  }
+
+  .hd-photo {
+    visibility: hidden;
+  }
+
+  .ab-title p {
+    font-size: 4.5vmin !important;
+    font-weight: 600;
+  }
+
+  #about-me {
+    flex-direction: column;
+  }
+
+  .biography-content > section:nth-child(1),
+  section:nth-child(3) {
+    flex-direction: column;
+  }
+
+  .biography-content > section:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .biography-content > section {
+    padding: 10vh 0;
+  }
+
+  .about-me-title-container {
+    width: 100%;
+  }
+
+  .about-me-content {
+    width: 100%;
+    padding: 0 10vmin;
+  }
+
+  .about-me-content h3 {
+    margin-top: 50px;
+  }
+
+  .about-me-content p,
+  h3 {
+    text-align: center;
+  }
+
+  .biography-image-container-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .biography-image-container-block img {
+    width: 80%;
+    height: 25vh;
+    margin: 10px 0;
+  }
+
+  .modal-window{
+    flex-direction: column;
+
+  }
+  .modal-image{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modal-text{
+    height: 100%;
+  }
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+  p {
+    font-size: 3vmin !important;
+  }
+
+  .hd-photo {
+    visibility: hidden;
+  }
+
+  .ab-title p {
+    font-size: 4.0vmin !important;
+    font-weight: 600;
+  }
+
+  #about-me {
+    flex-direction: column;
+  }
+
+  .biography-content > section:nth-child(1),
+  section:nth-child(3) {
+    flex-direction: column;
+  }
+
+  .biography-content > section:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .biography-content > section {
+    padding: 10vh 0;
+  }
+
+  .about-me-title-container {
+    width: 100%;
+  }
+
+  .about-me-content {
+    width: 100%;
+    padding: 0 10vmin;
+  }
+
+  .about-me-content h3 {
+    margin-top: 50px;
+  }
+
+  .about-me-content p,
+  h3 {
+    text-align: center;
+  }
+
+  .biography-image-container-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .biography-image-container-block img {
+    width: 80%;
+    height: 25vh;
+    margin: 10px 0;
+  }
+
+  .modal-window{
+    flex-direction: column;
+    height: 45vh;
+
+  }
+  .modal-image{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modal-text{
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+ 
+}
+
+
+/* 
+  Css Animations 
+*/
+
+@keyframes modal-view {
+  0%{
+    position: relative;
+    bottom: -100vh;
+  }
+
+  100%{
+    position: relative;
+    bottom: 0;
+  }
+}
+
+@keyframes modal-out {
+  0%{
+    position: relative;
+    right: 0;
+  }
+
+  100%{
+    position: relative;
+    right: -100vw;
+  }
+}
+
+/* Fuente: https://pokecoder.hashnode.dev/create-a-wavy-text-effect-with-pure-css */
+
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+

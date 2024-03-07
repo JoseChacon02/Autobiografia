@@ -5,8 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autobiografia</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="src/imgs/favicon-32x32.png">
 </head>
 <body>
+    <!--Modal-->
+    <div id="modal" class="modal">
+        <div class="modal-window">
+            <img class="modal-image" src="" alt="">
+            <div class="modal-text">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+<!--Gradiente-->
+    <div class="gradient">
+        <img src="./src/imgs/gradient.png">
+    </div>
+
+    <!--Cabecera del proyecto-->
+    <header class="hd">
+        <div class="hd-photo"></div>
+        <div class="ab-title-container">
+            <div class="ab-title">
+                <p>Hola, soy</p>
+                <hgroup class="name-container">
+                    <h1 class="border">Jose Chacon</h1>
+                    <h1 class="wave">Jose Chacon</h1>
+                </hgroup>
+                <p>Y esta es mi <span>Autobiografia</span></p>
+            </div>
+        </div>
+    </header>
     
+    <!--Seccion Sobre mi-->
+    <section id="about-me">
+        <div class="about-me-title-container">
+            <h2>Sobre mi<span class="mini-block"></span></h2>
+            <div class="about-me-img-container">
+                <img src="./src/imgs/photoMyself2.jpg" class="about-me-img"></img>
+            </div>
+        </div>
+        <div class="about-me-content">
+            <h3>Estudiante Informatica - <span>UPTAI</span></h3>
+            <p>Mi nombre es José Chacón, y me complace presentarme como un apasionado estudiante de informática en la <a href="https://uptaivirtual.com">Universidad Politécnica Territorial Agroindustrial del Estado Táchira</a>. Actualmente, me encuentro cursando el Trayecto I, donde he tenido la oportunidad de adentrarme en los fundamentos de la informática y desarrollar habilidades técnicas sólidas. </p>
+            <p>A mis 18 años, siempre he sentido una profunda fascinación por la ingeniería en general. Me intriga entender cómo están estructuradas las cosas, ya sea en el ámbito físico o virtual. Esta curiosidad me ha llevado a explorar el mundo de la programación web durante el último año.</p>
+            <p> Mi especialización se centra en el <span>Stack MERN (MongoDB, Express.js, React y Node.js)</span>. Y sin embargo, a pesar de ser programador Fullstack, mi verdadero interés reside en el backend. Creo firmemente que la robustez y eficiencia de una aplicación dependen en gran medida de su infraestructura subyacente. Por lo tanto, me dedico a profundizar en la lógica de negocio, la seguridad y la optimización de servidores.</p>
+        </div>
+    </section>
+    
+    <!--Seccion Historia-->
+    <section id="biography">
+        <div class="biography-title-container">
+            <h2>Biografia<span class="mini-block"></span></h2>
+        </div>
+        <div class="biography-content">
+            <section>
+                <div class="biography-image">
+                    <img src="./src/imgs/4-6.png" alt="">
+                </div>
+                <div class="biography-content-block">
+                    <h3><span>Mi vida a los 4 - 6 Años</span></h3>
+                    <p>Tuve una infancia muy divertida y llena de aventuras. Siempre estaba rodeado de amigos con los que compartía juegos, risas y fiestas infantiles, me gustaba bailar y participar en toda competencia posible de baile, me divertia mucho y ganaba premios. Me encantaba viajar por el país con mis padres y conocer lugares increíbles. Disfrutaba mucho de la naturaleza, especialmente de las playas y las islas. Tenía una pasión por los animales y me gustaba montar a caballo. También formé parte de la orquesta sinfónica infantil, donde aprendí a tocar varios instrumentos y participé en muchas presentaciones.</p>
+                    <div class="biography-image-container-block">
+                        <img class="img" src="./src/imgs/fourFirstPhoto.jpg" alt="">
+                        <img class="img" src="./src/imgs/fourSecondPhoto.jpg" alt="">
+                    </div>                
+                </div>
+            </section>
+            <section>
+                <div class="biography-content-block">
+                    <h3><span>Mi vida a los 6 - 8 Años</span></h3>
+                    <p>A mis 6 años mi vida da completamente un giro inesperado, sufri un <span>ACV (accidente cerebro vascular)</span>  que afecto mi cerebelo y mi motricidad, no podia hablar bien, ni caminar bien, me costaba incluso comer y tener estabilidad en mi cuerpo, ese mismo dia convulcione mas de 5 veces, el doctor me dio un diagnostico dificil, tenia que ir recuperando toda mi parte motriz nuevamente poco a poco, mi proceso seria lento pero siempre tuve la gran fe de mis padres y familiares, pero rempetinamente al otro dia desperte perfecto, habia vuelto completamente mi parte motriz, corria feliz por los pasillos de la clinica, podia hablar bien, dure 11 dias hozpitalizado haciendome estudios y consiguiendo una explicacion de mi tan pronta recuperacion, pero cada dia me mejoraba mas y mas, el doctor y el padre de la clinica me dijeron que habia sido un completo milagro mi recuperacion, estaba completamente feliz de haber recuperado mi parte motriz por completo.   </p>
+                    <div class="biography-image-container-block">
+                        <img class="img" src="./src/imgs/sixFirstPhoto.jpg" alt="">
+                        <img class="img" src="./src/imgs/sixSecondPhoto.jpg" alt="">
+                    </div> 
+                </div>
+                <div class="biography-image">
+                    <img src="./src/imgs/6-8.png" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="biography-image">
+                    <img src="./src/imgs/8-14.png" alt="">
+                </div>
+                <div class="biography-content-block">
+                    <h3><span>Mi vida a los 8 - 14 Años</span></h3>
+                    <p>Volvi a ser un niño feliz y sano, fui muy estudioso y empece a practicar deportes pero note que mi parte motriz no rendia igual a mis demas compañeros, a los 8 años empece a sufrir pequeñas convulciones mioclonias faciales donde me recetaron un tratamiento que tuve que tomar por muchos años, pero al menos podia seguir siendo un niño feliz y sano. <span>Comenzando mis 14 años</span> tuve la mejor de las noticias despues de tantos años tomando mi tratamiento y miles de estudios me dieron la noticia de que estaba completamente recuperado y no necesitaba mas medicacion, podia llevar una vida totalmente normal, me enfoque totalmente en el ejercicio y tener una alimentacion sana, la calistenia se volvio mi deporte favorito. </p>     
+                    <div class="biography-image-container-block">
+                        <img class="img" src="./src/imgs/fourTeenFirstPhoto.jpg" alt="">
+                        <img class="img" src="./src/imgs/fourTeenSecondPhoto.jpg" alt="">
+                    </div>            
+                </div>
+            </section>
+        </div>
+    </section>
+    <!--Footer del proyecto-->
+    <footer>
+        <p>© 2024 Jose A. Chacon</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
