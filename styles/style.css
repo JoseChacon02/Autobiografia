@@ -262,6 +262,12 @@ h2 {
   width: 48%;
   height: 35vh;
   object-fit: cover;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+
+.biography-image-container-block img:hover{
+  scale: 1.01;
 }
 
 .biography-content > section > div > h3 {
